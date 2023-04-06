@@ -1,10 +1,11 @@
+import { HomeAppBar } from "@/components/appbar";
 import React from "react";
 
 const Home = () => {
 
   return (
     <>
-      Home
+      <HomeAppBar />
     </>
   );
 };
