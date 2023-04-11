@@ -2,10 +2,6 @@ import { createTheme } from "@mui/material/styles";
 import { palette } from "./palette";
 import { components } from "./components";
 import { typography } from "./typography";
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
 
 /**
  * Main theme
