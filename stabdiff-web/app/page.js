@@ -1,10 +1,10 @@
 "use client"
-import { HomeAppBar } from "@/components/appbar";
+import { MainAppBar } from "@/components";
 
 export default function Home() {
   return (
     <>
-      <HomeAppBar />
+      <MainAppBar />
     </>
   )
 }
