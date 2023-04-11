@@ -7,6 +7,7 @@ export const palette = {
     main: 'rgb(5, 2, 14)',
     dark: 'rgb(5, 2, 14)',
     light: 'rgb(5, 2, 14)',
+    contrastText: '#ffffff',
   },
   secondary: {
     main: 'rgb(17, 15, 26)',
