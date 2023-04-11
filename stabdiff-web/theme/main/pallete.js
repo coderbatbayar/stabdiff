@@ -3,24 +3,39 @@
  */
 export const palette = {
   mode: 'dark',
+  // Black
   primary: {
-    main: 'rgb(5, 2, 14)',
-    dark: 'rgb(5, 2, 14)',
-    light: 'rgb(5, 2, 14)',
+    main: 'rgb(0, 0, 0)',
+    dark: 'rgb(0, 0, 0)',
+    light: 'rgb(255, 255, 255)',
     contrastText: '#ffffff',
   },
+  // White
   secondary: {
-    main: 'rgb(17, 15, 26)',
-    dark: 'rgb(17, 15, 26)',
-    light: 'rgb(17, 15, 26)',
-  },
-  tertiary: {
     main: 'rgb(255, 255, 255)',
-    dark: 'rgb(255, 255, 255)',
+    dark: 'rgb(17, 15, 26)',
     light: 'rgb(255, 255, 255)',
   },
+  // Yellow
+  tertiary: {
+    main: 'rgb(239, 223, 0)',
+    dark: 'rgb(239, 223, 0)',
+    light: 'rgb(239, 223, 0)',
+  },
+  // Gray
+  quaternary: {
+    main: 'rgb(161, 161, 169)',
+    dark: 'rgb(161, 161, 169)',
+    light: 'rgb(161, 161, 169)',
+  },
+  // Light blue
+  quinary: {
+    main: 'rgb(129, 173, 249)',
+    dark: 'rgb(129, 173, 249)',
+    light: 'rgb(129, 173, 249)',
+  },
   background: {
-    default: 'rgb(5, 2, 14)',
+    default: 'rgb(255, 255, 255)',
     paper: 'rgb(5, 2, 14)',
   },
   border: {
