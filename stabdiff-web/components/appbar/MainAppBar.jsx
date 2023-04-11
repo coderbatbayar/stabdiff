@@ -1,12 +1,11 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { SignUpButton } from "../button";
 import { AppBar, Toolbar } from "@mui/material";
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   height: 81,
   borderBottom: `1px solid ${theme.palette.border.secondary[theme.palette.mode]}`,
-  background: theme.palette.secondary[theme.palette.mode],
+  background: theme.palette.primary[theme.palette.mode],
   backgroundImage: 'none',
 }));
 

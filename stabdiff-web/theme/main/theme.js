@@ -1,5 +1,5 @@
 import { createTheme } from "@mui/material/styles";
-import { palette } from "./pallete";
+import { palette } from "./palette";
 import { components } from "./components";
 import { typography } from "./typography";
 import '@fontsource/roboto/300.css';

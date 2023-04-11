@@ -13,7 +13,7 @@ export const palette = {
   // White
   secondary: {
     main: 'rgb(255, 255, 255)',
-    dark: 'rgb(17, 15, 26)',
+    dark: 'rgb(255, 255, 255)',
     light: 'rgb(255, 255, 255)',
   },
   // Yellow

@@ -1,13 +1,16 @@
 "use client"
-import { MainAppBar } from "@/components";
-import { SignUpButton } from "@/components/button";
-import { MainMenu } from "@/components/menu/MainMenu";
+import { MainAppBar, SignUpButton, MainMenu } from "@/components";
 
 export default function Home() {
   return (
     <>
       <MainAppBar>
-        <MainMenu />
+        <MainMenu items={[
+          {label: "AI GEN", href: "/generate"},
+          {label: "GALLERY", href: "/gallery"},
+          {label: "NOTICE", href: "/notice"},
+          {label: "MY PAGE", href: "/mypage"},
+        ]} />
         <SignUpButton>Sign Up</SignUpButton>
       </MainAppBar>
     </>

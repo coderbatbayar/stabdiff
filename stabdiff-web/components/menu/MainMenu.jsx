@@ -1,18 +1,24 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { Menu } from "@mui/material";
+import Link from "next/link";
 
-const StyledMenu = styled(Menu)(({ theme }) => ({
-
+const StyledLink = styled(Link)(({ theme }) => ({
+  color: theme.palette.secondary[theme.palette.mode],
+  fontSize: 20,
+  fontWeight: 'bold',
+  padding: '0 15px',
+  textDecoration: 'none',
+  letterSpacing: -0.5
 }));
 
-export const MainMenu = (props) => {
+export const MainMenu = ({items, ...props}) => {
   return (
-    <>
-      <StyledMenu>AI GEN</StyledMenu>
-      <StyledMenu>GALLERY</StyledMenu>
-      <StyledMenu>NOTICE</StyledMenu>
-      <StyledMenu>MY PAGE</StyledMenu>
-    </>
+    <div {...props}>
+      {items?.map((item, i) => {
+        return <StyledLink href={item.href}>
+          {item.label}
+        </StyledLink>  
+      })}
+    </div>
   )
 }
