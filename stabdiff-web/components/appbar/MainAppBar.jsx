@@ -32,7 +32,7 @@ export const MainAppBar = (props) => {
   return (
     <StyledAppBar {...props}>
       <StyledToolbar>
-        <SignUpButton>Sign Up</SignUpButton>
+        {props.children}
       </StyledToolbar>
     </StyledAppBar>
   )
