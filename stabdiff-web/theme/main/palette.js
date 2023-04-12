@@ -35,7 +35,7 @@ export const palette = {
     light: 'rgb(129, 173, 249)',
   },
   background: {
-    default: 'rgb(255, 255, 255)',
+    default: 'rgb(5, 2, 14)',
     paper: 'rgb(5, 2, 14)',
   },
   border: {

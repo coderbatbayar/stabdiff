@@ -27,7 +27,7 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 
 export const MainAppBar = (props) => {
   return (
-    <StyledAppBar {...props}>
+    <StyledAppBar position="sticky" {...props}>
       <StyledToolbar>
         {props.children}
       </StyledToolbar>

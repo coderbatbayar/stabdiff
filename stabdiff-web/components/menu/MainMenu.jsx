@@ -23,7 +23,7 @@ export const MainMenu = ({items, ...props}) => {
   return (
     <Menu {...props}>
       {items?.map((item, i) => {
-        return <MenuItem>
+        return <MenuItem key={i}>
           <StyledLink href={item.href}>
             {item.label}
           </StyledLink>  
