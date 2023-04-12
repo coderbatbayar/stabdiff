@@ -1,6 +1,6 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { AppBar, Toolbar } from "@mui/material";
+import { AppBar, Toolbar, Box } from "@mui/material";
 
 const StyledAppBar = styled(AppBar)(({ theme }) => ({
   height: 81,
@@ -10,8 +10,6 @@ const StyledAppBar = styled(AppBar)(({ theme }) => ({
 }));
 
 const StyledToolbar = styled(Toolbar)(({ theme }) => ({
-  display: 'flex',
-  justifyContent: 'space-between',
   minHeight: 80,
   paddingLeft: 16,
   paddingRight: 16,
@@ -34,5 +32,16 @@ export const MainAppBar = (props) => {
         {props.children}
       </StyledToolbar>
     </StyledAppBar>
+  )
+}
+
+export const MainAppBarRightSide = (props) => {
+  return (
+    <>
+      <Box sx={{ flexGrow: 1 }} />
+      <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
+        {props.children}
+      </Box>
+    </>
   )
 }
