@@ -19,12 +19,12 @@ export default function RootLayout({ children }) {
             <HeaderLogo />
             <MainAppBarRightSide>
               <MainMenu items={[
-                {label: "AI GEN", href: "/generate"},
-                {label: "GALLERY", href: "/gallery"},
-                {label: "NOTICE", href: "/notice"},
-                {label: "MY PAGE", href: "/mypage"},
+                {menu: "AI GEN", href: "/generate"},
+                {menu: "GALLERY", href: "/gallery"},
+                {menu: "NOTICE", href: "/notice"},
+                {menu: "MY PAGE", href: "/mypage"},
+                {menu: <SignUpButton>Sign Up</SignUpButton>, href: "/mypage"},
               ]} />
-              <SignUpButton>Sign Up</SignUpButton>
             </MainAppBarRightSide>
           </MainAppBar>
           {children}
