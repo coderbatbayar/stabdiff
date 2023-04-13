@@ -12,7 +12,7 @@ import '@fontsource/noto-sans-kr/700.css';
  */
 export const typography = {
   "fontFamily": `"Noto Sans KR", "Roboto", "Arial", sans-serif`,
-  "fontSize": 14,
+  "fontSize": 13,
   // "fontWeightLight": 300,
   // "fontWeightRegular": 400,
   // "fontWeightMedium": 500

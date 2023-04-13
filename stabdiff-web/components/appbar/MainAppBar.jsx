@@ -50,7 +50,12 @@ export const MainAppBar = (props) => {
             <MainMenuItem href='/notice'>NOTICE</MainMenuItem>
             <MainMenuItem href='/mypage'>MY PAGE</MainMenuItem>
           </MainMenu>
-          <MenuLink />
+          <MenuLink links={[
+              {label: 'RKM', link: 'https://www.renaultkoream.com/'},
+              {label: 'Discord', link: 'https://discord.com/'},
+              {label: 'ChatGPT', link: 'https://chat.openai.com/'}
+            ]} 
+          />
         </MainAppBarRightSide>
       </Toolbar>
     </AppBar>

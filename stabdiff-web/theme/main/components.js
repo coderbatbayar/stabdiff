@@ -1,16 +1,22 @@
-
-
 /**
  * Main theme components
  */
 export const components = {
   MuiCssBaseline: ({theme}) => ({
     styleOverrides: {
-      body: {
-        backgroundColor: 'red',
-      }
+      // body: {
+      //   backgroundColor: 'red',
+      // }
     }
   }),
+  MuiList: {
+    styleOverrides: {
+      root: {
+        paddingTop: 0,
+        paddingBottom: 0
+      }
+    }
+  },
   MuiButton: {
     styleOverrides: {
       root: ({theme}) => ({
