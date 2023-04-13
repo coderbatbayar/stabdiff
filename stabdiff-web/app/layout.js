@@ -1,8 +1,15 @@
-'use client';
-import { ThemeProvider } from '@mui/system'
-import MainTheme from '@/theme/main/theme'
-import { CssBaseline } from '@mui/material';
-import { MainAppBar, MainMenu, HeaderLogo, MainAppBarRightSide, MenuLink, MainMenuItem } from "@/components";
+"use client";
+import { ThemeProvider } from "@mui/system";
+import MainTheme from "@/theme/main/theme";
+import { CssBaseline } from "@mui/material";
+import {
+  MainAppBar,
+  MainMenu,
+  HeaderLogo,
+  MainAppBarRightSide,
+  MenuLink,
+  MainMenuItem
+} from "@/components";
 
 // export const metadata = {
 //   title: 'Stab Diff',
@@ -16,9 +23,9 @@ export default function RootLayout({ children }) {
         <CssBaseline />
         <body>
           <MainAppBar />
-          {children}
+          <div style={{ padding: "20px" }}>{children}</div>
         </body>
       </ThemeProvider>
     </html>
-  )
+  );
 }
