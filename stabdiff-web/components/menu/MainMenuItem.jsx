@@ -7,7 +7,11 @@ const Link = styled(LinkList)(({ theme }) => ({
   fontSize: 13,
   fontWeight: 'bold',
   padding: '0 15px',
-  letterSpacing: 0.5
+  letterSpacing: 0.5,
+
+  "&:hover": {
+    color: theme.palette.tertiary[theme.palette.mode],
+  }
 }));
 
 export const MainMenuItem = (props) => {
