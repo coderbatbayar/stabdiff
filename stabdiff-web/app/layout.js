@@ -2,7 +2,7 @@
 import { ThemeProvider } from '@mui/system'
 import MainTheme from '@/theme/main/theme'
 import { CssBaseline } from '@mui/material';
-import { MainAppBar, SignUpButton, MainMenu, HeaderLogo, MainAppBarRightSide } from "@/components";
+import { MainAppBar, MainMenu, HeaderLogo, MainAppBarRightSide, MenuLink, MainMenuItem } from "@/components";
 
 // export const metadata = {
 //   title: 'Stab Diff',
@@ -15,18 +15,7 @@ export default function RootLayout({ children }) {
       <ThemeProvider theme={MainTheme}>
         <CssBaseline />
         <body>
-          <MainAppBar>
-            <HeaderLogo />
-            <MainAppBarRightSide>
-              <MainMenu items={[
-                {menu: "AI GEN", href: "/generate"},
-                {menu: "GALLERY", href: "/gallery"},
-                {menu: "NOTICE", href: "/notice"},
-                {menu: "MY PAGE", href: "/mypage"},
-                {menu: <SignUpButton>Sign Up</SignUpButton>, href: "/mypage"},
-              ]} />
-            </MainAppBarRightSide>
-          </MainAppBar>
+          <MainAppBar />
           {children}
         </body>
       </ThemeProvider>

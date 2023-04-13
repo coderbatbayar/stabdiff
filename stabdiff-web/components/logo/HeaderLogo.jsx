@@ -1,13 +1,22 @@
 import React from "react";
 import { styled } from "@mui/system";
-import Image from "next/image";
+import { ImageLink as BaseImage } from "@/components";
 
-const StyledImage = styled(Image)(({ theme }) => ({
-
+const Image = styled(BaseImage)(({ theme }) => ({
+  width: 52,
+  height: 34
 }));
 
 export const HeaderLogo = (props) => {
   return (
-    <StyledImage src="/renault-logo-korea.svg" alt="Renault Korea Logo" width={80} height={50}/>
+    <Image 
+      href="/" 
+      src="/renault-logo-korea.svg" 
+      alt="Renault Korea Logo" 
+      width={52}
+      height={34} 
+    />
   )
 }
+
+export default HeaderLogo;
