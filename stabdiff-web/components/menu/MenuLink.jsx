@@ -40,6 +40,7 @@ export const MenuLink = ({links, ...props}) => {
       <IconButton 
         icon={<LinkIcon />} 
         onClick={onOpenMenu}
+        selected={open}
       />
       <Menu
         anchorEl={anchorEl}

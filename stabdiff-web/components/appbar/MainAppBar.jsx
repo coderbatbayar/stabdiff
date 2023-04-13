@@ -18,7 +18,7 @@ const Toolbar = styled(MuiToolbar)(({ theme }) => ({
   paddingTop: 6, 
   paddingBottom: 6,
 
-  [theme.breakpoints.down('lg')]: {
+  [theme.breakpoints.up('xs')]: {
     minHeight: 50,
     paddingLeft: 16,
     paddingRight: 16,

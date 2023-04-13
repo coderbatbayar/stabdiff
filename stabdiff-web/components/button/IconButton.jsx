@@ -2,8 +2,8 @@ import React from "react";
 import { styled } from "@mui/system";
 import { IconButton as MuiIconButton } from "@mui/material";
 
-const StyledIconButton = styled(MuiIconButton)(({ theme }) => ({
-  
+const StyledIconButton = styled(MuiIconButton)(({ theme, selected }) => ({
+  color: selected ? theme.palette.tertiary[theme.palette.mode] : 'inherit'
 }));
 
 export const IconButton = (props) => {
