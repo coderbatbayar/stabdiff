@@ -40,6 +40,7 @@ export const MenuLink = ({links, ...props}) => {
       <IconButton 
         icon={<LinkIcon />} 
         onClick={onOpenMenu}
+        onMouseEnter={onOpenMenu}
         selected={open}
       />
       <Menu
@@ -47,7 +48,7 @@ export const MenuLink = ({links, ...props}) => {
         open={open}
         onClose={onCloseMenu}
       >
-        <Paper>
+        <Paper onMouseLeave={onCloseMenu}>
           {links?.map((link, index) => (
             <>
               <MenuItem
@@ -64,3 +65,5 @@ export const MenuLink = ({links, ...props}) => {
     </>
   )
 }
+
+export default MenuLink;

@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/system";
 import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Box } from "@mui/material";
-import { HeaderLogo, MenuLink } from "@/components";
+import { HeaderLogo, MenuLink, MenuWallet } from "@/components";
 import { MainMenu, MainMenuItem } from "@/components";
 
 const AppBar = styled(MuiAppBar)(({ theme }) => ({
@@ -56,6 +56,7 @@ export const MainAppBar = (props) => {
               {label: 'ChatGPT', link: 'https://chat.openai.com/'}
             ]} 
           />
+          <MenuWallet />
         </MainAppBarRightSide>
       </Toolbar>
     </AppBar>
