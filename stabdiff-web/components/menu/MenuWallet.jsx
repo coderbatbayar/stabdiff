@@ -1,11 +1,9 @@
 import React from "react";
 import { styled } from "@mui/system";
-import LinkIcon from '@mui/icons-material/Link';
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
-import { IconButton, MenuItem, MetamaskConnectButton } from "@/components";
+import { IconButton, MenuItem, MetamaskConnectButton, KaikasConnectButton } from "@/components";
 import { Menu as MuiMenu } from "./Menu";
 import { Paper as MuiPaper } from "@mui/material";
-import KaikasConnectButton from "./kaikas/KaikasConnectButton";
 
 const Menu = styled(MuiMenu)(({theme}) => ({
   "> .MuiList-root": {
