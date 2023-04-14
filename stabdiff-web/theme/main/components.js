@@ -2,13 +2,14 @@
  * Main theme components
  */
 export const components = {
-  MuiCssBaseline: ({theme}) => ({
-    styleOverrides: {
-      // body: {
-      //   backgroundColor: 'red',
-      // }
-    }
-  }),
+  MuiCssBaseline: {
+    styleOverrides: `
+      body {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }`
+  },
   MuiList: {
     styleOverrides: {
       root: {

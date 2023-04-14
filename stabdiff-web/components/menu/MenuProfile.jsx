@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/system";
 import PersonOutlineIcon from '@mui/icons-material/PersonOutline';
-import { Button } from "@/components";
+import Button from "../button/Button";
 
 const StyledButton = styled(Button)(({ theme }) => ({
   minWidth: 'auto',
