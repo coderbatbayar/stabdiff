@@ -1,9 +1,11 @@
 "use client";
 import { ThemeProvider } from "@mui/system";
 import MainTheme from "@/theme/main/theme";
-import { CssBaseline } from "@mui/material";
+import { Container, CssBaseline } from "@mui/material";
 import {
+  Footer,
   MainAppBar,
+  MainContainer,
 } from "@/components";
 
 // export const metadata = {
@@ -18,7 +20,8 @@ export default function RootLayout({ children }) {
         <CssBaseline />
         <body>
           <MainAppBar />
-          <div style={{ padding: "20px" }}>{children}</div>
+          <MainContainer>{children}</MainContainer>
+          <Footer />
         </body>
       </ThemeProvider>
     </html>
