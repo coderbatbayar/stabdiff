@@ -1,7 +1,7 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { styled } from "@mui/system";
 import LinkList from "../link/LinkList";
-
+import { usePathname } from "next/navigation";
 
 const Link = styled(LinkList)(({ theme, selected }) => ({
   color: selected ? theme.palette.tertiary[theme.palette.mode] : theme.palette.secondary[theme.palette.mode],
@@ -14,22 +14,19 @@ const Link = styled(LinkList)(({ theme, selected }) => ({
     color: theme.palette.tertiary[theme.palette.mode],
   },
 
-  // "&:visited": {
-  //   color: 'inherit',
-  // }
+  "&:visited": {
+    color: selected ? theme.palette.tertiary[theme.palette.mode] : 'inherit',
+  }
 }));
 
 export const MainMenuItem = ({href, ...props}) => {
-  
+  const pathname = usePathname();
 
   return (
-    <Link href={href} {...props} selected={href === ""}>
+    <Link href={href} {...props} selected={href === pathname}>
       {props.children}
     </Link>
   )
 }
-
-
-
 
 export default MainMenuItem;

@@ -4,11 +4,6 @@ import MainTheme from "@/theme/main/theme";
 import { CssBaseline } from "@mui/material";
 import {
   MainAppBar,
-  MainMenu,
-  HeaderLogo,
-  MainAppBarRightSide,
-  MenuLink,
-  MainMenuItem
 } from "@/components";
 
 // export const metadata = {
