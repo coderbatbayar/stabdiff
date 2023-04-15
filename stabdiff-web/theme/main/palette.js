@@ -2,62 +2,47 @@
  * Main theme pallete
  */
 export const palette = {
-  mode: 'dark',
+  
   // Black
   primary: {
-    main: 'rgb(0, 0, 0)',
-    dark: 'rgb(0, 0, 0)',
-    light: 'rgb(255, 255, 255)',
-    contrastText: '#ffffff',
-  },
-  // White
-  secondary: {
-    main: 'rgb(255, 255, 255)',
-    dark: 'rgb(255, 255, 255)',
-    light: 'rgb(255, 255, 255)',
+    main: 'rgb(0, 0, 0)'
   },
   // Yellow
+  secondary: {
+    main: 'rgb(239, 223, 0)'
+  },
+  // Platinum
   tertiary: {
-    main: 'rgb(239, 223, 0)',
-    dark: 'rgb(239, 223, 0)',
-    light: 'rgb(239, 223, 0)',
+    main: 'rgb(rgb(242, 242, 242)'
   },
-  // Gray
+  // Jet
   quaternary: {
-    main: 'rgb(161, 161, 169)',
-    dark: 'rgb(161, 161, 169)',
-    light: 'rgb(161, 161, 169)',
+    main: 'rgb(62, 63, 64)',
   },
-  // Light blue
+  // Smoke
   quinary: {
-    main: 'rgb(129, 173, 249)',
-    dark: 'rgb(129, 173, 249)',
-    light: 'rgb(129, 173, 249)',
+    main: 'rgb(244, 244, 244)',
+  },
+  text: {
+    primary: 'rgb(0, 0, 0)',
+    secondary: 'rgb(239, 223, 0)',
+    tertiary: 'rgb(255, 255, 255)',
+    quaternary: 'rgb(150, 150, 153)',
   },
   background: {
-    default: 'rgb(5, 2, 14)',
-    paper: 'rgb(5, 2, 14)',
+    default: 'rgb(255, 255, 255)',
+    paper: 'rgb(62, 63, 64)',
   },
   border: {
-    primary: {
-      dark: 'rgb(42, 40, 50)',
-      light: 'rgb(42, 40, 50)',
-    },
-    secondary: {
-      dark: 'rgb(42, 40, 50)',
-      light: 'rgb(42, 40, 50)',
-    },
-    tertiary: {
-      dark: 'rgb(226, 232, 240)',
-      light: 'rgb(226, 232, 240)',
-    }
+    primary:  'rgb(0, 0, 0)',
+    secondary:  'rgb(217, 217, 214)'
   },
-  shadows: [
-    'none',
-    'none',
-    'none',
-    'none',
-    '0 1px 8px 0 rgba(0,0,0,.1)',
-    ...Array(20).fill('none')
-  ]
+  // shadows: [
+  //   'none',
+  //   'none',
+  //   'none',
+  //   'none',
+  //   '0 1px 8px 0 rgba(0,0,0,.1)',
+  //   ...Array(20).fill('none')
+  // ]
 };
