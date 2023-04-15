@@ -4,18 +4,17 @@ import LinkList from "../link/LinkList";
 import { usePathname } from "next/navigation";
 
 const Link = styled(LinkList)(({ theme, selected }) => ({
-  color: selected ? theme.palette.tertiary[theme.palette.mode] : theme.palette.secondary[theme.palette.mode],
-  fontSize: 13,
-  fontWeight: 'bold',
-  padding: '0 15px',
-  letterSpacing: 0.5,
+  color: selected ? 'textSecondary' : 'textTertiary',
+  fontSize: 24,
+  padding: '0 28px',
+  fontWeight: 500,
 
   "&:hover": {
-    color: theme.palette.tertiary[theme.palette.mode],
+    color: `${theme.palette.text.secondary} !important`,
   },
 
   "&:visited": {
-    color: selected ? theme.palette.tertiary[theme.palette.mode] : 'inherit',
+    color: selected ? 'textSecondary' : 'inherit',
   }
 }));
 

@@ -3,8 +3,8 @@ import { styled } from "@mui/system";
 import { ImageLink as BaseImage } from "@/components";
 
 const Image = styled(BaseImage)(({ theme }) => ({
-  width: 52,
-  height: 34
+  width: 100,
+  height: 86
 }));
 
 export const HeaderLogo = (props) => {
@@ -13,8 +13,8 @@ export const HeaderLogo = (props) => {
       href="/" 
       src="/renault-logo-korea.svg" 
       alt="Renault Korea Logo" 
-      width={52}
-      height={34} 
+      width={100}
+      height={86} 
     />
   )
 }

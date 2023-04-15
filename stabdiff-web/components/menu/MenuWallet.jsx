@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/system";
 import AccountBalanceWalletIcon from '@mui/icons-material/AccountBalanceWallet';
-import { IconButton, MenuItem, MetamaskConnectButton, KaikasConnectButton } from "@/components";
+import { VerticalIconButton, MenuItem, MetamaskConnectButton, KaikasConnectButton } from "@/components";
 import { Menu as MuiMenu } from "./Menu";
 import { Paper as MuiPaper } from "@mui/material";
 
@@ -33,12 +33,13 @@ export const MenuWallet = ({links, ...props}) => {
 
   return (
     <>
-      <IconButton 
+      <VerticalIconButton 
         icon={<AccountBalanceWalletIcon />} 
         onClick={onOpenMenu}
-        onMouseEnter={onOpenMenu}
         selected={open}
-      />
+      >
+        지갑
+      </VerticalIconButton>
       <Menu
         anchorEl={anchorEl}
         open={open}

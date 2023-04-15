@@ -24,14 +24,18 @@ export const palette = {
     main: 'rgb(244, 244, 244)',
   },
   text: {
+    // Black
     primary: 'rgb(0, 0, 0)',
+    // Yellow
     secondary: 'rgb(239, 223, 0)',
+    // White
     tertiary: 'rgb(255, 255, 255)',
+    // Grey
     quaternary: 'rgb(150, 150, 153)',
   },
   background: {
     default: 'rgb(255, 255, 255)',
-    paper: 'rgb(62, 63, 64)',
+    paper: 'rgb(255, 255, 255)',
   },
   border: {
     primary:  'rgb(0, 0, 0)',

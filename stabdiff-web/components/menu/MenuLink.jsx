@@ -1,7 +1,7 @@
 import React from "react";
 import { styled } from "@mui/system";
 import LinkIcon from '@mui/icons-material/Link';
-import { IconButton, MenuItem } from "@/components";
+import { VerticalIconButton, MenuItem } from "@/components";
 import { Menu as MuiMenu } from "./Menu";
 import { Paper as MuiPaper } from "@mui/material";
 
@@ -37,12 +37,13 @@ export const MenuLink = ({links, ...props}) => {
 
   return (
     <>
-      <IconButton 
+      <VerticalIconButton 
         icon={<LinkIcon />} 
         onClick={onOpenMenu}
-        onMouseEnter={onOpenMenu}
         selected={open}
-      />
+      >
+        링크
+      </VerticalIconButton>
       <Menu
         anchorEl={anchorEl}
         open={open}
@@ -50,15 +51,13 @@ export const MenuLink = ({links, ...props}) => {
       >
         <Paper onMouseLeave={onCloseMenu}>
           {links?.map((link, index) => (
-            <>
-              <MenuItem
-                key={index}
-                onClick={(event) => onMenuItemClick(event, link.link)}
-                divider={index !== links.length-1}
-              >
-                {link.label}
-              </MenuItem>
-            </>
+            <MenuItem
+              key={index}
+              onClick={(event) => onMenuItemClick(event, link.link)}
+              divider={index !== links.length-1}
+            >
+              {link.label}
+            </MenuItem>
           ))}
         </Paper>
       </Menu>

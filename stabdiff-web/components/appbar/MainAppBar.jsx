@@ -1,29 +1,30 @@
 import React from "react";
 import { styled } from "@mui/system";
-import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Box } from "@mui/material";
+import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Box, Button } from "@mui/material";
 import { HeaderLogo, MenuLink, MenuProfile, MenuWallet } from "@/components";
 import { MainMenu, MainMenuItem } from "@/components";
+import DeleteIcon from '@mui/icons-material/Delete';
 
 const AppBar = styled(MuiAppBar)(({ theme }) => ({
-  height: 51,
-  borderBottom: `1px solid ${theme.palette.border.secondary[theme.palette.mode]}`,
-  background: theme.palette.primary[theme.palette.mode],
+  height: 150,
+  background: 'primary',
   backgroundImage: 'none',
+  boxShadow: 'none'
 }));
 
 const Toolbar = styled(MuiToolbar)(({ theme }) => ({
-  minHeight: 50,
-  paddingLeft: 16,
-  paddingRight: 16,
-  paddingTop: 6, 
-  paddingBottom: 6,
+  minHeight: 150,
+  paddingLeft: 50,
+  paddingRight: 50,
+  paddingTop: 32, 
+  paddingBottom: 32,
 
   [theme.breakpoints.up('xs')]: {
-    minHeight: 50,
-    paddingLeft: 16,
-    paddingRight: 16,
-    paddingTop: 6,
-    paddingBottom: 6,
+    minHeight: 150,
+    paddingLeft: 50,
+    paddingRight: 50,
+    paddingTop: 32,
+    paddingBottom: 32,
   },
 }));
 
@@ -43,13 +44,13 @@ export const MainAppBar = (props) => {
     <AppBar position="sticky" {...props}>
       <Toolbar>
         <HeaderLogo />
+        <MainMenu>
+          <MainMenuItem href='/'>갤러리</MainMenuItem>
+          <MainMenuItem href='/generate'>AI 제너레이터</MainMenuItem>
+          <MainMenuItem href='/notice'>공지사항</MainMenuItem>
+          <MainMenuItem href='/mypage'>마이페이지</MainMenuItem>
+        </MainMenu>
         <MainAppBarRightSide>
-          <MainMenu>
-            <MainMenuItem href='/generate'>AI GEN</MainMenuItem>
-            <MainMenuItem href='/gallery'>GALLERY</MainMenuItem>
-            <MainMenuItem href='/notice'>NOTICE</MainMenuItem>
-            <MainMenuItem href='/mypage'>MY PAGE</MainMenuItem>
-          </MainMenu>
           <MenuLink links={[
               {label: 'RKM', link: 'https://www.renaultkoream.com/'},
               {label: 'Discord', link: 'https://discord.com/'},
