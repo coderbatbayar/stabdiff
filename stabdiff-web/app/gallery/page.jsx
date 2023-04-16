@@ -1,12 +1,14 @@
+import { Banner } from "../../components/banner/Banner";
 import dynamic from "next/dynamic";
 import * as React from "react";
-const Layout = dynamic(() => import("../../components/pinterest/layout"), {
+const Masonry = dynamic(() => import("../../components/Masonry/Masonry"), {
   ssr: false
 });
 const Gallery = () => {
   return (
     <>
-      <Layout />
+      <Banner />
+      <Masonry />
     </>
   );
 };

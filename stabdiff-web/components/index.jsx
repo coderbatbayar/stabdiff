@@ -6,3 +6,5 @@ export * from "./image";
 export * from "./logo";
 export * from "./footer";
 export * from "./container";
+export * from "./Masonry";
+export * from "./Banner";
