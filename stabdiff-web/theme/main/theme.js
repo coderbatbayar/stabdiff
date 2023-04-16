@@ -10,6 +10,6 @@ const MainTheme = createTheme({
   palette: palette,
   components: components,
   typography: typography
-})
+});
 
 export default MainTheme;
