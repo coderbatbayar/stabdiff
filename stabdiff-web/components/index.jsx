@@ -8,3 +8,5 @@ export * from "./footer";
 export * from "./container";
 export * from "./Masonry";
 export * from "./Banner";
+export * from "./generate";
+export * from "./label";

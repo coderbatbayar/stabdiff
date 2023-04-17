@@ -108,5 +108,24 @@ export const components = {
         items: "center"
       })
     }
+  },
+  MuiInputBase: {
+    styleOverrides: {
+      root: ({ theme }) => ({
+        borderRadius: '0 !important'
+      }),
+    }
+  },
+  MuiOutlinedInput: {
+    styleOverrides: {
+      root: ({ theme }) => ({
+        "&.Mui-focused": {
+          borderColor: theme.palette.border.secondary
+        }
+      }),
+      notchedOutline: ({ theme }) => ({
+        borderColor: theme.palette.border.secondary
+      }),
+    }
   }
 };

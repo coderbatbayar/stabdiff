@@ -23,3 +23,5 @@ export const Banner = () => {
     </>
   );
 };
+
+export default Banner;
