@@ -1,5 +1,5 @@
+"use client";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { styled } from "@mui/material";
@@ -10,7 +10,8 @@ const StyledSlide = styled(SwiperSlide)(({ theme }) => ({
   backgroundColor: "black",
   borderRadius: "24px",
   position: "relative",
-  overflow: "hidden"
+  overflow: "hidden",
+  backgroundColor: "transparent !Important"
 }));
 const StyledSwiper = styled(Swiper)(({ theme }) => ({
   height: "650px",
