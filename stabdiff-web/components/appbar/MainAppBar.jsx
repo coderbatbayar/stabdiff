@@ -45,7 +45,7 @@ export const MainAppBar = (props) => {
       <Toolbar>
         <HeaderLogo />
         <MainMenu>
-          <MainMenuItem href='/'>갤러리</MainMenuItem>
+          <MainMenuItem href='/gallery'>갤러리</MainMenuItem>
           <MainMenuItem href='/generate'>AI 제너레이터</MainMenuItem>
           <MainMenuItem href='/notice'>공지사항</MainMenuItem>
           <MainMenuItem href='/mypage'>마이페이지</MainMenuItem>
