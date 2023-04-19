@@ -3,12 +3,13 @@ import React from "react";
 import { Button, styled } from "@mui/material";
 
 const StyledImage = styled("img")({
-  width: "300px",
-  height: "300px",
+  width: "210px",
+  height: "210px",
   borderRadius: "10px",
   backgroundColor: "yellow",
-  border: "none",
-  overflow: "hidden"
+  border: "none none none none",
+  overflow: "hidden",
+  marginBottom: "24px"
 });
 const StyledTitle = styled("div")({
   fontSize: "48px",
@@ -19,7 +20,7 @@ const StyledLayout = styled("div")({
   paddingBottom: "20px",
   display: "flex",
   justifyContent: "start",
-  gap: "24px",
+  gap: "43px",
   alignItems: "start"
 });
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -28,8 +29,9 @@ const StyledButton = styled(Button)(({ theme }) => ({
   display: "flex",
   color: "black",
   borderRadius: "0px",
+  fontWeight: "500",
   fontSize: "24px",
-  padding: "0px 20px 0px 20px"
+  padding: "5px 20px 5px 20px"
 }));
 
 const Profile = () => {
@@ -38,7 +40,7 @@ const Profile = () => {
       <StyledImage />
       <div>
         <StyledTitle>신현준</StyledTitle>
-        <StyledButton>Edit</StyledButton>
+        <StyledButton>EDIT</StyledButton>
       </div>
     </StyledLayout>
   );

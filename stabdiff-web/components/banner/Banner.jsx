@@ -5,7 +5,7 @@ import Swiper from "./Swiper";
 
 const StyledDiv = styled("div")(({ theme }) => ({
   width: "100%",
-  minHeight: "900px",
+  minHeight: "749px",
   height: "100%",
   display: "flex",
   justifyContent: "center",

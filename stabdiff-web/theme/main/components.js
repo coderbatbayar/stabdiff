@@ -75,7 +75,7 @@ export const components = {
         minHeight: "auto",
         margin: "auto",
         borderRadius: "24px !important",
-        padding: "8px 20px 8px 20px !important",
+        padding: "0px 20px 0px 20px !important",
         borderTopLeftRadius: "24px !important",
         borderTopRightRadius: "24px !important",
         borderBottomRightRadius: "24px !important",
@@ -89,6 +89,7 @@ export const components = {
         color: "white",
         "&.Mui-selected": {
           backgroundColor: "#efed00",
+          fontWeight: "500",
           color: "black"
         },
         "&:hover": {
@@ -112,8 +113,8 @@ export const components = {
   MuiInputBase: {
     styleOverrides: {
       root: ({ theme }) => ({
-        borderRadius: '0 !important'
-      }),
+        borderRadius: "0 !important"
+      })
     }
   },
   MuiOutlinedInput: {
@@ -125,7 +126,7 @@ export const components = {
       }),
       notchedOutline: ({ theme }) => ({
         borderColor: theme.palette.border.secondary
-      }),
+      })
     }
   }
 };

@@ -29,16 +29,16 @@ const StyledImage = styled("img")(({ theme }) => ({
   objectFit: "cover"
 }));
 const StyledImg = styled("img")({
-  width: "80px",
-  height: "80px",
+  width: "60px",
+  height: "60px",
   borderRadius: "12px",
   backgroundColor: "yellow",
   border: "none",
   overflow: "hidden"
 });
 const StyledProfileImg = styled("div")(({ theme }) => ({
-  width: "700px",
-  height: "700px",
+  width: "630px",
+  height: "630px",
   minWidth: "600px",
   objectFit: "cover",
   borderRadius: "24px",
@@ -65,7 +65,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
   display: "flex",
   color: "black",
   borderRadius: "0px",
-  fontSize: "24px",
+  fontSize: "14px",
   padding: "10px",
   fontWeight: "500",
   width: "200px"
@@ -90,7 +90,7 @@ const StyledArtTitle = styled("div")({
   fontSize: "36px",
   fontWeight: "500",
   color: "white",
-  padding: "20px 0px 20px 0px "
+  padding: "10px 0px 10px 0px "
 });
 const StyledCopy = styled("div")({
   width: "100%",
@@ -199,9 +199,9 @@ export default function MyPageModal({ open, setOpen }) {
                 flexDirection: "column",
                 color: "white",
                 textAlign: "center",
-                fontSize: "24px"
+                fontSize: "18px"
               }}>
-              <p>
+              <p style={{ marginBlockEnd: "0px" }}>
                 center 배치
                 <br /> 모달 백그라운드 backdrop-filter: blur(25px);
               </p>

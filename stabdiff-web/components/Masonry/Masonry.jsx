@@ -8,20 +8,18 @@ import MasonryProvider from "./MasonryContext";
 
 const StyledLayout = styled("div")(({ theme }) => ({
   width: "100%",
-  height: "100%",
-  display: "flex",
-  flexDirection: "column"
+  height: "100%"
 }));
 
 const MasonryLayout = ({ type }) => {
   return (
     <>
-      <Box>
+      <StyledLayout>
         <MasonryProvider>
           <MasonryFilter type={type} />
           <MasonryList type={type} />
         </MasonryProvider>
-      </Box>
+      </StyledLayout>
     </>
   );
 };

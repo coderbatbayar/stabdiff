@@ -26,7 +26,7 @@ export default function Categorys() {
           onChange={handleChange}
           aria-label="Platform">
           {cats.map((element, i) => (
-            <ToggleButton key={i} value={element.key}>
+            <ToggleButton type="submit" key={i} value={element.key}>
               {element.value}
             </ToggleButton>
           ))}

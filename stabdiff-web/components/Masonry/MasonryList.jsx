@@ -37,13 +37,18 @@ export default function MasonryList({ type }) {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, []);
+
+  console.log(+windowSize.width);
   return (
     <StyledLayout>
       <Masonry
-        columns={Math.floor(+windowSize.width * 0.0025)}
-        spacing={2}
-        width={+windowSize.innerWidth}
-        sx={{ items: "center" }}>
+        columns={Math.floor(+windowSize.width * 0.003)}
+        spacing={4}
+        width={+windowSize.width}
+        sx={{ items: "center" }}
+        defaultHeight={546}
+        defaultColumns={4}
+        defaultSpacing={2}>
         {heights.map((height, index) => (
           <MasonryCart key={index} type={type} keyIndex={index} />
         ))}

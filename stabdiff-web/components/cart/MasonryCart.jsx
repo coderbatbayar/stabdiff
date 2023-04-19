@@ -11,7 +11,7 @@ const Item = styled(Paper)(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
   width: "100%",
-  borderRadius: "24px",
+  borderRadius: "10px",
   overflow: "hidden",
   boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
   cursor: "pointer"
