@@ -7,7 +7,7 @@ export * from "./logo";
 export * from "./footer";
 export * from "./container";
 export * from "./Masonry";
-export * from "./Banner";
+export * from "./banner";
 export * from "./generate";
 export * from "./label";
 export * from "./news";

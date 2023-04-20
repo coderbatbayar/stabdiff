@@ -13,6 +13,7 @@ export const ModelSelect = (props) => {
       <Label>Model</Label>
       <FormControl fullWidth>
         <Select
+          defaultValue={10}
           {...props}
         >
           <MenuItem value={10}>Stable diff</MenuItem>

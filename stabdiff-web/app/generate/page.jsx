@@ -5,11 +5,13 @@ import { useLightningState } from "@/hooks/useLightningState";
 import { postDream } from "@/services/axiosApi";
 import { Grid } from "@mui/material";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useEffect } from "react";
 
 export const Generate = () => {
 
   const queryClient = new QueryClient();
   // const { lightningState } = useLightningState();
+
 
   const generateImage = async () => {
     try {
