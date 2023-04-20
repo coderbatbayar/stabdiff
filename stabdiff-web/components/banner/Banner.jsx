@@ -1,7 +1,7 @@
 "use client";
 import { styled } from "@mui/material";
 import React from "react";
-import Swiper from "./Swiper";
+import Swipers from "./Swiper";
 
 const StyledDiv = styled("div")(({ theme }) => ({
   width: "100%",
@@ -18,7 +18,7 @@ export const Banner = () => {
   return (
     <>
       <StyledDiv>
-        <Swiper />
+        <Swipers />
       </StyledDiv>
     </>
   );

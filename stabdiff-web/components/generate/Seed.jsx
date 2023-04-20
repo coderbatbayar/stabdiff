@@ -8,15 +8,13 @@ const StyledTextField = styled(TextField)(({ theme }) => ({
   
 }));
 
-export const ExcludeToggle = (props) => {
+export const Seed = (props) => {
   return (
     <ItemContainer>
-      <Label>Exclude from Image</Label>
-      <Typography>
-        Describe details you don't want in your image like color, objects, or a scenery.
-      </Typography>
+      <Label>Seed</Label>
+      
     </ItemContainer>
   )
 }
 
-export default ExcludeToggle;
+export default Seed;

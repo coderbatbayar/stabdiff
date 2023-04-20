@@ -1,19 +1,23 @@
 'use client';
 
-import { ExcludeToggle, PromptTextField, Divider, Upload, GenerateButton, ModelSelect } from "@/components/generate";
+import { Quality } from "@/components";
+import { ExcludeToggle, PromptTextField, Divider, Upload, GenerateButton, ModelSelect, ImageDimension, NumberOfImages, Scale, Seed} from "@/components";
 import { useLightningState } from "@/hooks/useLightningState";
 import { postDream } from "@/services/axiosApi";
 import { Grid } from "@mui/material";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import { useEffect } from "react";
 
-export default function Generate() {
+export const Generate = () => {
 
   const queryClient = new QueryClient();
-  const { lightningState } = useLightningState();
+  // const { lightningState } = useLightningState();
 
-  const generate = async () => {
+
+  const generateImage = async () => {
     try {
-      const result = await postDream(query, true, lightningState.vars.dream_url);
+      // const result = await postDream("sss", true, lightningState.vars.dream_url);
+      const result = await postDream("cat", true, "url");
       // setImgResult(result.image);
       console.log(result);
     } catch {
@@ -33,8 +37,8 @@ export default function Generate() {
           <Divider />
           <Upload />
           <GenerateButton 
-            disabled={!lightningState?.vars?.dream_url}
-            onClick={generate} 
+            // disabled={!lightningState?.vars?.dream_url}
+            onClick={generateImage} 
           />
         </Grid>
         <Grid item xs={6}>
@@ -43,8 +47,19 @@ export default function Generate() {
         <Grid item xs={3}>
           <ModelSelect />
           <Divider />
+          <ImageDimension />
+          <Divider />
+          <Scale />
+          <Divider />
+          <Quality />
+          <Divider />
+          <Seed />
+          <Divider />
+          <NumberOfImages />
         </Grid>
       </Grid>
     </QueryClientProvider>
   )
 }
+
+export default Generate;

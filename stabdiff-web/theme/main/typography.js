@@ -11,7 +11,7 @@ import '@fontsource/noto-sans-kr/700.css';
  * Main theme typography
  */
 export const typography = {
-  "fontFamily": `"Noto Sans KR", "Roboto", "Arial", sans-serif`,
+  "fontFamily": `"NouvelRKRBold", "Noto Sans KR", "Roboto", "Arial", sans-serif`,
   "fontSize": 13,
   // "fontWeightLight": 300,
   // "fontWeightRegular": 400,

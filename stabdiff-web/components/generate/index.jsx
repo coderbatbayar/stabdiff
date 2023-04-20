@@ -4,3 +4,8 @@ export * from "./Divider";
 export * from "./Upload";
 export * from "./GenerateButton";
 export * from "./ModelSelect";
+export * from "./ImageDimension";
+export * from "./Scale";
+export * from "./Quality";
+export * from "./Seed";
+export * from "./NumberOfImages";

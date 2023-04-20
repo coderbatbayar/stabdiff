@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "4071b9bc-7ed3-4600-b2e5-535eeb5e3467",
+		"name": "stabdiff",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "8222066"
+	},
+	"item": [
+		{
+			"name": "User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/user?id=643ca95162d239ccd02ebab0",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"user"
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "643ca95162d239ccd02ebab0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{localhost}}/user",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"nickname\": \"Batbayar\"}"
+				},
+				"url": {
+					"raw": "{{localhost}}/user",
+					"host": [
+						"{{localhost}}"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,15 +1,16 @@
 import React from "react";
 import { styled } from "@mui/system";
 import { TextField, Box } from "@mui/material";
-import { Label } from "@/components";
+import Label from "./Label";
+import ItemContainer from "./ItemContainer";
 
 const StyledTextField = styled(TextField)(({ theme }) => ({
-  
+  width: '100%'
 }));
 
 export const PromptTextField = (props) => {
   return (
-    <>
+    <ItemContainer>
       <Label>Prompt</Label>
       <StyledTextField 
         placeholder="ex: Captur orange diesel.."
@@ -21,7 +22,7 @@ export const PromptTextField = (props) => {
         }}
         {...props}
       />
-    </>
+    </ItemContainer>
   )
 }
 
