@@ -1,6 +1,7 @@
 'use client';
 
-import { ExcludeToggle, PromptTextField, Divider, Upload, GenerateButton, ModelSelect } from "@/components/generate";
+import { Quality } from "@/components";
+import { ExcludeToggle, PromptTextField, Divider, Upload, GenerateButton, ModelSelect, ImageDimension, NumberOfImages, Scale, Seed} from "@/components";
 import { useLightningState } from "@/hooks/useLightningState";
 import { postDream } from "@/services/axiosApi";
 import { Grid } from "@mui/material";
@@ -46,6 +47,15 @@ export const Generate = () => {
         <Grid item xs={3}>
           <ModelSelect />
           <Divider />
+          <ImageDimension />
+          <Divider />
+          <Scale />
+          <Divider />
+          <Quality />
+          <Divider />
+          <Seed />
+          <Divider />
+          <NumberOfImages />
         </Grid>
       </Grid>
     </QueryClientProvider>

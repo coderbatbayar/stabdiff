@@ -9,5 +9,4 @@ export * from "./container";
 export * from "./Masonry";
 export * from "./banner";
 export * from "./generate";
-export * from "./label";
 export * from "./news";

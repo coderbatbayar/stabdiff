@@ -1,6 +1,7 @@
 import React from "react";
 import { styled } from "@mui/system";
 import { Button } from "@mui/material";
+import ItemContainer from "./ItemContainer";
 
 const StyledButton = styled(Button)(({ theme }) => ({
   width: '100%',
@@ -14,9 +15,11 @@ const StyledButton = styled(Button)(({ theme }) => ({
 
 export const GenerateButton = (props) => {
   return (
-    <StyledButton {...props}>
-      Generate
-    </StyledButton>
+    <ItemContainer>
+      <StyledButton {...props}>
+        Generate
+      </StyledButton>
+    </ItemContainer>
   )
 }
 
