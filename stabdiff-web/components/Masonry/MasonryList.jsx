@@ -3,6 +3,8 @@ import * as React from "react";
 import Masonry from "@mui/lab/Masonry";
 import { MasonryCart } from "../cart";
 import { styled } from "@mui/system";
+import cars from "../../config/cars.json";
+import { MasonryContext } from "./MasonryContext";
 
 const StyledLayout = styled("div")(({ theme }) => ({
   width: "100%",
@@ -20,10 +22,12 @@ const heights = [
 ];
 
 export default function MasonryList({ type }) {
+  const [filter, setFilter] = React.useState({});
   const [windowSize, setWindowSize] = React.useState({
     width: undefined,
     height: undefined
   });
+  const { filterParams } = React.useContext(MasonryContext);
   React.useEffect(() => {
     if (typeof window !== "undefined") {
       function handleResize() {
@@ -37,6 +41,9 @@ export default function MasonryList({ type }) {
       return () => window.removeEventListener("resize", handleResize);
     }
   }, []);
+  React.useEffect(() => {
+    setFilter(filterParams);
+  }, [filterParams]);
 
   console.log(+windowSize.width);
   return (
@@ -49,9 +56,12 @@ export default function MasonryList({ type }) {
         defaultHeight={546}
         defaultColumns={4}
         defaultSpacing={2}>
-        {heights.map((height, index) => (
-          <MasonryCart key={index} type={type} keyIndex={index} />
-        ))}
+        {cars
+          .filter((e) => e.title?.includes(filter.searchKeyword))
+          // .filter((e) => e.class?.includes(filterParams.category))
+          .map((car, index) => (
+            <MasonryCart car={car} key={index} type={type} keyIndex={index} />
+          ))}
       </Masonry>
     </StyledLayout>
   );

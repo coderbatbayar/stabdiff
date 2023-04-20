@@ -1,3 +1,4 @@
+"use client";
 import React, { useContext } from "react";
 import Image from "next/image";
 import { styled } from "@mui/material/styles";
@@ -10,8 +11,7 @@ const Item = styled(Paper)(({ theme }) => ({
   display: "flex",
   alignItems: "center",
   justifyContent: "center",
-  width: "100%",
-  maxWidth: "350px",
+  width: "350px",
   borderRadius: "10px",
   overflow: "hidden",
   cursor: "pointer"
@@ -22,20 +22,17 @@ const StyledImage = styled("img")(({ theme }) => ({
   objectFit: "cover"
 }));
 
-const MasonryCart = ({ keyIndex, src, type, ...props }) => {
+const MasonryCart = ({ car, keyIndex, src, type, ...props }) => {
   const imageRef = React.useRef();
   const { handleClickArt } = useContext(MasonryContext);
 
   const getRandomInt = (min, max) => {
     return Math.floor(Math.random() * (max - min + 1)) + min;
   };
-  const url = `https://picsum.photos/id/${getRandomInt(
-    50,
-    1000
-  )}/${getRandomInt(100, 300)}/${getRandomInt(150, 250)}`;
+  const url = `${car.image}`;
   return (
-    <Item onClick={() => handleClickArt({ url, type: type })}>
-      <StyledImage src={url} alt={`Image ${keyIndex}`} ref={imageRef} />
+    <Item onClick={() => handleClickArt({ url: car.image, type: type })}>
+      <StyledImage src={car.image} alt={`Image ${keyIndex}`} ref={imageRef} />
     </Item>
   );
 };

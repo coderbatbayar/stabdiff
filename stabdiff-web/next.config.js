@@ -4,7 +4,12 @@ const nextConfig = {
     appDir: true
   },
   images: {
-    domains: ["picsum.photos"]
+    domains: [
+      "picsum.photos",
+      "upload.wikimedia.org",
+      "upload.wikimedia",
+      "upload"
+    ]
   }
 };
 

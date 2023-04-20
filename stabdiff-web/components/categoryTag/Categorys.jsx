@@ -3,9 +3,12 @@ import ToggleButton from "@mui/material/ToggleButton";
 import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 
 const cats = [
-  { key: "title", value: "Title" },
-  { key: "second", value: "Second" },
-  { key: "thrid", value: "Thrid" }
+  { key: "car", value: "car" },
+  { key: "luxury", value: "luxury" },
+  { key: "Personal", value: "Personal" },
+  { key: "Minivan", value: "Minivan" },
+  { key: "Mid-size", value: "Mid-size" },
+  { key: "Sport", value: "Sport" }
 ];
 
 export default function Categorys() {
