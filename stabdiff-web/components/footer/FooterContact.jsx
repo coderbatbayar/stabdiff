@@ -53,7 +53,7 @@ export const FooterContact = (props) => {
             </Grid>
             <Grid xs={12} sm={12} md={3}>
               <Grid container>
-                <Grid xs={12} sm={12} md={3}>
+                <Grid>
                   <Typography>
                     사이트ㆍ제품ㆍ서비스 문의 : 엔젤센터 : 080-300-3000
                   </Typography>

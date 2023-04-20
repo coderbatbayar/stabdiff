@@ -1,3 +1,5 @@
+// import NouvelRKRBold from "../fonts/NouvelR/NouvelR KR-Bold.ttf";
+
 /**
  * Main theme components
  */
@@ -34,7 +36,14 @@ export const components = {
         "&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner": {
           backgroundColor: "#2b2b2b"
         }
-      }
+      },
+      // "@font-face": {
+      //   fontFamily: 'NouvelRKRBold',
+      //   fontStyle: 'normal',
+      //   fontDisplay: 'swap',
+      //   fontWeight: 700,
+      //   src: `local('NouvelRKRBold'), local('NouvelRKRBold'), url(${NouvelRKRBold}) format('ttf')`        
+      // }
     }
   },
   MuiList: {
