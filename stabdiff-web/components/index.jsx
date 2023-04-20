@@ -10,3 +10,4 @@ export * from "./Masonry";
 export * from "./Banner";
 export * from "./generate";
 export * from "./label";
+export * from "./news";
