@@ -43,9 +43,9 @@ export default function MasonryList({ type }) {
   }, []);
   React.useEffect(() => {
     setFilter(filterParams);
-  }, [filterParams]);
+  }, [filterParams.searchKeyword]);
 
-  console.log(+windowSize.width);
+  console.log(filterParams);
   return (
     <StyledLayout>
       <Masonry
@@ -58,7 +58,7 @@ export default function MasonryList({ type }) {
         defaultSpacing={2}>
         {cars
           .filter((e) => e.title?.includes(filter.searchKeyword))
-          // .filter((e) => e.class?.includes(filterParams.category))
+          .filter((e) => e.class?.includes(filterParams.categoryName))
           .map((car, index) => (
             <MasonryCart car={car} key={index} type={type} keyIndex={index} />
           ))}
