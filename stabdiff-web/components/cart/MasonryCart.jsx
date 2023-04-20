@@ -11,9 +11,9 @@ const Item = styled(Paper)(({ theme }) => ({
   alignItems: "center",
   justifyContent: "center",
   width: "100%",
+  maxWidth: "350px",
   borderRadius: "10px",
   overflow: "hidden",
-  boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px",
   cursor: "pointer"
 }));
 const StyledImage = styled("img")(({ theme }) => ({

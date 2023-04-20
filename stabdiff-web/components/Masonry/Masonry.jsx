@@ -8,7 +8,12 @@ import MasonryProvider from "./MasonryContext";
 
 const StyledLayout = styled("div")(({ theme }) => ({
   width: "100%",
-  height: "100%"
+  height: "100%",
+  overflow: "hidden",
+  display: "flex",
+  flexDirection: "column",
+  justifyContent: "center",
+  alignItems: "center"
 }));
 
 const MasonryLayout = ({ type }) => {

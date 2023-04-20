@@ -36,13 +36,13 @@ export const components = {
         "&::-webkit-scrollbar-corner, & *::-webkit-scrollbar-corner": {
           backgroundColor: "#2b2b2b"
         }
-      },
+      }
       // "@font-face": {
       //   fontFamily: 'NouvelRKRBold',
       //   fontStyle: 'normal',
       //   fontDisplay: 'swap',
       //   fontWeight: 700,
-      //   src: `local('NouvelRKRBold'), local('NouvelRKRBold'), url(${NouvelRKRBold}) format('ttf')`        
+      //   src: `local('NouvelRKRBold'), local('NouvelRKRBold'), url(${NouvelRKRBold}) format('ttf')`
       // }
     }
   },
@@ -136,6 +136,13 @@ export const components = {
       notchedOutline: ({ theme }) => ({
         borderColor: theme.palette.border.secondary
       })
+    }
+  },
+  MuiMasonry: {
+    styleOverrides: {
+      root: {
+        margin: "0 !important"
+      }
     }
   }
 };
