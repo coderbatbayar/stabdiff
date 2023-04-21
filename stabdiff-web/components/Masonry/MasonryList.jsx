@@ -57,8 +57,14 @@ export default function MasonryList({ type }) {
         defaultColumns={4}
         defaultSpacing={2}>
         {cars
-          .filter((e) => e.title?.includes(filter.searchKeyword))
-          .filter((e) => e.class?.includes(filterParams.categoryName))
+          .filter((e) =>
+            filter.searchKeyword ? e.title?.includes(filter.searchKeyword) : e
+          )
+          .filter((e) =>
+            filterParams.categoryName
+              ? e.class?.includes(filterParams.categoryName)
+              : e
+          )
           .map((car, index) => (
             <MasonryCart car={car} key={index} type={type} keyIndex={index} />
           ))}

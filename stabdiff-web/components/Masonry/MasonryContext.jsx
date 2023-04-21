@@ -13,10 +13,6 @@ const MasonryProvider = ({ children }) => {
   });
   const [category, setCategory] = React.useState({});
 
-  React.useEffect(() => {
-    setFilterParams({ ...filterParams, category: category });
-  }, [category]);
-
   const handleClickArt = ({ url, type }) => {
     setOpen(url);
     setType(type);
